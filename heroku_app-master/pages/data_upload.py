@@ -162,7 +162,7 @@ def app():
       
 
 
-        R,G,B,str_el,img_original = readImage('./enhancedImages/r1c1_enhanced.png',x=filter_size,radius=disk_radius)
+        R,G,B,str_el,img_original = readImage('/enhancedImages/r1c1_enhanced.png',x=filter_size,radius=disk_radius)
 
         st.session_state["RAW_r"]=R
         st.session_state["RAW_r"]=G
