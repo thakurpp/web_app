@@ -242,11 +242,11 @@ def app():
             displayChannel(res_auto,2,col4,140)
 
             red = col5.checkbox("RED")
-            col5.image('image.png')
+            col5.image('heroku_app-master/image.png')
             green = col5.checkbox("GREEN")
-            col5.image('image.png')
+            col5.image('heroku_app-master/image.png')
             blue = col5.checkbox("BLUE")
-            col5.image('image.png')
+            
         
             # st_cropper(res_auto, realtime_update=True, box_color='#0000FF',
             #                         aspect_ratio=aspect_ratio)
