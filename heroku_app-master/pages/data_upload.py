@@ -26,30 +26,30 @@ import datetime
 
 # @st.cache(suppress_st_warning=True)
 def app():
-    st.sidebar.markdown("<h2 align='center'>ZACHARISTS</h2>",unsafe_allow_html=True)
-    title = st.sidebar.text_input('', placeholder="Paste image folder path here")
-    st.session_state['title']=title
-    print(title)
+#     st.sidebar.markdown("<h2 align='center'>ZACHARISTS</h2>",unsafe_allow_html=True)
+#     title = st.sidebar.text_input('', placeholder="Paste image folder path here")
+#     st.session_state['title']=title
+#     print(title)
     
-    def file_selector(folder_path='.'):
-        filenames = os.listdir(folder_path)
-        new_filenames=[]
-        for x in filenames:
-            if x.endswith(".tiff"):
-                new_filenames.append(x)
+#     def file_selector(folder_path='.'):
+#         filenames = os.listdir(folder_path)
+#         new_filenames=[]
+#         for x in filenames:
+#             if x.endswith(".tiff"):
+#                 new_filenames.append(x)
 
-        selected_filename = st.sidebar.selectbox('Select image', new_filenames)
-        st.sidebar.markdown("Manual Enhance")
-        return os.path.join(folder_path, selected_filename)
+#         selected_filename = st.sidebar.selectbox('Select image', new_filenames)
+#         st.sidebar.markdown("Manual Enhance")
+#         return os.path.join(folder_path, selected_filename)
 
 
-    folder_path= None
+#     folder_path= None
 
-    folder_path =title
-    if folder_path:
-        filename = file_selector(folder_path)
-    else:
-        filename= None
+#     folder_path =title
+#     if folder_path:
+#         filename = file_selector(folder_path)
+#     else:
+#         filename= None
     # st.write('You selected `%s`' % filename)
 
     # file1 = open("./pages/new.txt","r+")
@@ -61,6 +61,7 @@ def app():
     # print(y)
     # print(z)
     # print("DONE")
+    filename=True
     def redchangeValue():
         st.session_state['red'] = st.session_state["red_slider"]
     def greenchangeValue():
