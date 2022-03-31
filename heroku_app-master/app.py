@@ -57,8 +57,8 @@ st.set_page_config(
 
 hide_streamlit_style = """
                     <style>
-                    .css-18e3th9 {margin-top: -120px;}
-                    .css-1gx893w {margin-top: -55px}
+                    .css-18e3th9 {margin-top: -100px;}
+                    .css-1gx893w {margin-top: -40px}
                     .css-1djdyxw {font-size: large;font-weight: bold;}
                     p {font-weight: bold}
                     .css-1cpxqw2 {font-weight: bold;}
