@@ -1,0 +1,9 @@
+scikit-image
+numpy
+matplotlib
+scipy
+opencv-python-headless==4.5.5.64
+Pillow
+streamlit
+streamlit_cropper
+imageio
